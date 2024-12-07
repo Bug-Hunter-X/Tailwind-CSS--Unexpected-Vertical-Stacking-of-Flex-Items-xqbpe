@@ -1,0 +1,11 @@
+```javascript
+<div class="flex">
+  <div class="bg-red-500 p-4">
+    This div should have a red background.
+  </div>
+  <div class="bg-blue-500 p-4">
+    This div should have a blue background.
+  </div>
+</div>
+```
+This code snippet uses Tailwind CSS classes to style two divs.  However, if the parent div doesn't have the `flex` class, the divs will stack vertically instead of horizontally.  This is a subtle error as the class names look correct, but the layout is unexpected.  The bug lies in the omitted or misplaced `flex` class in the parent container.
